@@ -17,7 +17,7 @@
 
 ifneq ($(filter I805,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := device/Itel/I805
+LOCAL_PATH := $(call my-dir)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
