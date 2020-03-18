@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Copy zImage into place
-PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
+PRODUCT_COPY_FILES += device/Itel/I805/prebuilt/zImage:kernel
 
 # Set the main device brand flags
 PRODUCT_DEVICE := I805
