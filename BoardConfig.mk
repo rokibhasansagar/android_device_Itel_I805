@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/Itel/I805
+LOCAL_PATH := $(call my-dir)
 
 TARGET_BOARD_PLATFORM := mt6580
 TARGET_NO_BOOTLOADER := true
@@ -75,6 +75,8 @@ TW_INCLUDE_FB2PNG := true
 TW_DEFAULT_LANGUAGE := en
 TW_EXTRA_LANGUAGES := false
 
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 
@@ -84,4 +86,3 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x04000000 --tags_offset 0x0e000000
-
