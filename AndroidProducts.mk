@@ -15,6 +15,4 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/Itel/I805
-
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_I805.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_I805.mk
