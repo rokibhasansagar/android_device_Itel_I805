@@ -18,7 +18,7 @@
 PRODUCT_RELEASE_NAME := I805
 
 # Set the main device brand flags
-PRODUCT_DEVICE := itel-S12
+PRODUCT_DEVICE := I805
 PRODUCT_NAME := omni_I805
 PRODUCT_BRAND := Itel
 PRODUCT_MODEL := itel S12
@@ -49,4 +49,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # try force addition of fingerprint
 BUILD_FINGERPRINT := "Itel/I805/itel-S12:7.0/NRD90M/S12-I805-7.0-OP-V056-20180813:user/release-keys"
-
