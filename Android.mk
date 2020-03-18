@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter I805,itel-S12,$(TARGET_DEVICE)),)
+ifneq ($(filter I805,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := device/Itel/I805
 
