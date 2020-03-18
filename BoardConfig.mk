@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/Itel/I805
+
 TARGET_BOARD_PLATFORM := mt6580
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := I805

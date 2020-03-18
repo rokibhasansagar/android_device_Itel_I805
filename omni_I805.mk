@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/Itel/I805
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
