@@ -15,13 +15,11 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_NAME := I805
-
 # Set the main device brand flags
 PRODUCT_DEVICE := I805
 PRODUCT_NAME := omni_I805
 PRODUCT_BRAND := Itel
-PRODUCT_MODEL := itel S12
+PRODUCT_MODEL := I805
 PRODUCT_MANUFACTURER := itel
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
