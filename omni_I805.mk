@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := $(call my-dir)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
@@ -29,7 +31,7 @@ PRODUCT_MODEL := itel S12
 PRODUCT_MANUFACTURER := itel
 
 # Copy zImage into place
-PRODUCT_COPY_FILES += device/Itel/I805/prebuilt/zImage:kernel
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/zImage:kernel
 
 # From full_base.mk
 # Put en_US first in the list, so make it default.
