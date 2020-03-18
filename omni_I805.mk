@@ -15,23 +15,21 @@
 # limitations under the License.
 #
 
-# Set the main device brand flags
-PRODUCT_DEVICE := I805
-PRODUCT_NAME := omni_I805
-PRODUCT_BRAND := Itel
-PRODUCT_MODEL := I805
-PRODUCT_MANUFACTURER := itel
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Set the main device brand flags
+PRODUCT_DEVICE := I805
+PRODUCT_NAME := omni_I805
+PRODUCT_BRAND := Itel
+PRODUCT_MODEL := itel S12
+PRODUCT_MANUFACTURER := itel
+
 # Copy zImage into place
 PRODUCT_COPY_FILES += device/Itel/I805/prebuilt/zImage:kernel
-# Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
-# PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
 # From full_base.mk
 # Put en_US first in the list, so make it default.
