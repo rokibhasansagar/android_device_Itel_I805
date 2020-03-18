@@ -21,15 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Copy zImage into place
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_KERNEL):kernel
+
 # Set the main device brand flags
 PRODUCT_DEVICE := I805
 PRODUCT_NAME := omni_I805
 PRODUCT_BRAND := Itel
 PRODUCT_MODEL := itel S12
 PRODUCT_MANUFACTURER := itel
-
-# Copy zImage into place
-PRODUCT_COPY_FILES += $(LOCAL_DIR)/prebuilt/zImage:kernel
 
 # From full_base.mk
 # Put en_US first in the list, so make it default.
